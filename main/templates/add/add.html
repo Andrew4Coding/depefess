@@ -1,0 +1,23 @@
+{% extends 'base.html' %} 
+{% block content %}
+<a href="/">
+  <button>{{"<-"}} Back</button>
+</a>
+<form method="POST">
+  {% csrf_token %}
+  <table class="add-table">
+    {{ form.as_table }}
+    <tr>
+      <td></td>
+      <td>
+        <button
+          type="submit"
+          value="Add Entry"
+        >
+          + Send!
+        </button>
+      </td>
+    </tr>
+  </table>
+</form>
+{% endblock %}

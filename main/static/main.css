@@ -1,0 +1,170 @@
+* {
+    font-family: Poppins, sans-serif;
+    background-color: #f8f9fa;
+}
+
+body {
+    margin: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.menfesses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+.menfess-container {
+    padding: 30px;
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-height: 150px;
+    max-height: 300px;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+}
+
+.menfess-container > h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.menfess-container > p{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    width: 100%;
+    overflow-y: auto;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    max-width: 170px;
+    transition: 0.1s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    scale: 1.05;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-table {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+        font-size: 1rem;
+    }
+
+    .menfesses-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .menfess-container {
+        width: 100%;
+        padding: 20px;
+        min-height: 100px;
+        max-height: 250px;
+    }
+
+    .menfess-container > h3 {
+        font-size: 14px;
+    }
+
+    .menfess-container > p {
+        font-size: 11px;
+    }
+
+    button {
+        font-size: 12px;
+        max-width: 150px;
+    }
+
+    .add-table {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 720px) {
+    body {
+        margin: 30px;
+        font-size: 0.9rem;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .menfesses-container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .menfess-container {
+        padding: 15px;
+        min-height: 90px;
+        max-height: 200px;
+    }
+
+    .menfess-container > h3 {
+        font-size: 12px;
+    }
+
+    .menfess-container > p {
+        font-size: 10px;
+        max-width: 300px;
+    }
+
+    button {
+        font-size: 10px;
+        max-width: 130px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
